@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC2FF07A22187DAB00859946 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2FF07922187DAB00859946 /* AppDelegate.swift */; };
+		EC2FF07C22187DAB00859946 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2FF07B22187DAB00859946 /* GameViewController.swift */; };
+		EC2FF07F22187DAB00859946 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2FF07D22187DAB00859946 /* Main.storyboard */; };
+		EC2FF08222187DAB00859946 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2FF08022187DAB00859946 /* LaunchScreen.storyboard */; };
+		EC2FF08B22187DAB00859946 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2FF08A22187DAB00859946 /* AppDelegate.swift */; };
+		EC2FF08D22187DAB00859946 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2FF08C22187DAB00859946 /* GameViewController.swift */; };
+		EC2FF09022187DAB00859946 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2FF08E22187DAB00859946 /* Main.storyboard */; };
+		EC2FF09222187DAB00859946 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = EC2FF06E22187DAA00859946 /* Shaders.metal */; };
+		EC2FF09322187DAB00859946 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = EC2FF06E22187DAA00859946 /* Shaders.metal */; };
+		EC2FF09422187DAB00859946 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2FF06F22187DAA00859946 /* Renderer.swift */; };
+		EC2FF09522187DAB00859946 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2FF06F22187DAA00859946 /* Renderer.swift */; };
+		EC2FF09622187DAB00859946 /* ShaderTypes.h in Resources */ = {isa = PBXBuildFile; fileRef = EC2FF07022187DAA00859946 /* ShaderTypes.h */; };
+		EC2FF09722187DAB00859946 /* ShaderTypes.h in Resources */ = {isa = PBXBuildFile; fileRef = EC2FF07022187DAA00859946 /* ShaderTypes.h */; };
+		EC2FF09822187DAB00859946 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC2FF07122187DAB00859946 /* Assets.xcassets */; };
+		EC2FF09922187DAB00859946 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC2FF07122187DAB00859946 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EC2FF06E22187DAA00859946 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		EC2FF06F22187DAA00859946 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		EC2FF07022187DAA00859946 /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		EC2FF07122187DAB00859946 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC2FF07622187DAB00859946 /* Blending.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blending.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC2FF07922187DAB00859946 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC2FF07B22187DAB00859946 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		EC2FF07E22187DAB00859946 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC2FF08122187DAB00859946 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC2FF08322187DAB00859946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC2FF08822187DAB00859946 /* Blending.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blending.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC2FF08A22187DAB00859946 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC2FF08C22187DAB00859946 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		EC2FF08F22187DAB00859946 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC2FF09122187DAB00859946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC2FF07322187DAB00859946 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC2FF08522187DAB00859946 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC2FF06822187DAA00859946 = {
+			isa = PBXGroup;
+			children = (
+				EC2FF06D22187DAA00859946 /* Blending Shared */,
+				EC2FF07822187DAB00859946 /* Blending iOS */,
+				EC2FF08922187DAB00859946 /* Blending macOS */,
+				EC2FF07722187DAB00859946 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC2FF06D22187DAA00859946 /* Blending Shared */ = {
+			isa = PBXGroup;
+			children = (
+				EC2FF06E22187DAA00859946 /* Shaders.metal */,
+				EC2FF06F22187DAA00859946 /* Renderer.swift */,
+				EC2FF07022187DAA00859946 /* ShaderTypes.h */,
+				EC2FF07122187DAB00859946 /* Assets.xcassets */,
+			);
+			path = "Blending Shared";
+			sourceTree = "<group>";
+		};
+		EC2FF07722187DAB00859946 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC2FF07622187DAB00859946 /* Blending.app */,
+				EC2FF08822187DAB00859946 /* Blending.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC2FF07822187DAB00859946 /* Blending iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EC2FF07922187DAB00859946 /* AppDelegate.swift */,
+				EC2FF07B22187DAB00859946 /* GameViewController.swift */,
+				EC2FF07D22187DAB00859946 /* Main.storyboard */,
+				EC2FF08022187DAB00859946 /* LaunchScreen.storyboard */,
+				EC2FF08322187DAB00859946 /* Info.plist */,
+			);
+			path = "Blending iOS";
+			sourceTree = "<group>";
+		};
+		EC2FF08922187DAB00859946 /* Blending macOS */ = {
+			isa = PBXGroup;
+			children = (
+				EC2FF08A22187DAB00859946 /* AppDelegate.swift */,
+				EC2FF08C22187DAB00859946 /* GameViewController.swift */,
+				EC2FF08E22187DAB00859946 /* Main.storyboard */,
+				EC2FF09122187DAB00859946 /* Info.plist */,
+			);
+			path = "Blending macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC2FF07522187DAB00859946 /* Blending iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC2FF09C22187DAB00859946 /* Build configuration list for PBXNativeTarget "Blending iOS" */;
+			buildPhases = (
+				EC2FF07222187DAB00859946 /* Sources */,
+				EC2FF07322187DAB00859946 /* Frameworks */,
+				EC2FF07422187DAB00859946 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Blending iOS";
+			productName = "Blending iOS";
+			productReference = EC2FF07622187DAB00859946 /* Blending.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC2FF08722187DAB00859946 /* Blending macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC2FF09F22187DAB00859946 /* Build configuration list for PBXNativeTarget "Blending macOS" */;
+			buildPhases = (
+				EC2FF08422187DAB00859946 /* Sources */,
+				EC2FF08522187DAB00859946 /* Frameworks */,
+				EC2FF08622187DAB00859946 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Blending macOS";
+			productName = "Blending macOS";
+			productReference = EC2FF08822187DAB00859946 /* Blending.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC2FF06922187DAA00859946 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "LEE CHUL HYUN";
+				TargetAttributes = {
+					EC2FF07522187DAB00859946 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					EC2FF08722187DAB00859946 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = EC2FF06C22187DAA00859946 /* Build configuration list for PBXProject "Blending" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC2FF06822187DAA00859946;
+			productRefGroup = EC2FF07722187DAB00859946 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC2FF07522187DAB00859946 /* Blending iOS */,
+				EC2FF08722187DAB00859946 /* Blending macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC2FF07422187DAB00859946 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC2FF09622187DAB00859946 /* ShaderTypes.h in Resources */,
+				EC2FF07F22187DAB00859946 /* Main.storyboard in Resources */,
+				EC2FF09822187DAB00859946 /* Assets.xcassets in Resources */,
+				EC2FF08222187DAB00859946 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC2FF08622187DAB00859946 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC2FF09022187DAB00859946 /* Main.storyboard in Resources */,
+				EC2FF09922187DAB00859946 /* Assets.xcassets in Resources */,
+				EC2FF09722187DAB00859946 /* ShaderTypes.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC2FF07222187DAB00859946 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC2FF09422187DAB00859946 /* Renderer.swift in Sources */,
+				EC2FF09222187DAB00859946 /* Shaders.metal in Sources */,
+				EC2FF07C22187DAB00859946 /* GameViewController.swift in Sources */,
+				EC2FF07A22187DAB00859946 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC2FF08422187DAB00859946 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC2FF09522187DAB00859946 /* Renderer.swift in Sources */,
+				EC2FF09322187DAB00859946 /* Shaders.metal in Sources */,
+				EC2FF08D22187DAB00859946 /* GameViewController.swift in Sources */,
+				EC2FF08B22187DAB00859946 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EC2FF07D22187DAB00859946 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC2FF07E22187DAB00859946 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC2FF08022187DAB00859946 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC2FF08122187DAB00859946 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EC2FF08E22187DAB00859946 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC2FF08F22187DAB00859946 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC2FF09A22187DAB00859946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EC2FF09B22187DAB00859946 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		EC2FF09D22187DAB00859946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WD3LPJ2STX;
+				INFOPLIST_FILE = "Blending iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = g.Blending;
+				PRODUCT_NAME = Blending;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Blending Shared/ShaderTypes.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC2FF09E22187DAB00859946 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WD3LPJ2STX;
+				INFOPLIST_FILE = "Blending iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = g.Blending;
+				PRODUCT_NAME = Blending;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Blending Shared/ShaderTypes.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC2FF0A022187DAB00859946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WD3LPJ2STX;
+				INFOPLIST_FILE = "Blending macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = g.Blending;
+				PRODUCT_NAME = Blending;
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "Blending Shared/ShaderTypes.h";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		EC2FF0A122187DAB00859946 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WD3LPJ2STX;
+				INFOPLIST_FILE = "Blending macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = g.Blending;
+				PRODUCT_NAME = Blending;
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "Blending Shared/ShaderTypes.h";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC2FF06C22187DAA00859946 /* Build configuration list for PBXProject "Blending" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC2FF09A22187DAB00859946 /* Debug */,
+				EC2FF09B22187DAB00859946 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC2FF09C22187DAB00859946 /* Build configuration list for PBXNativeTarget "Blending iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC2FF09D22187DAB00859946 /* Debug */,
+				EC2FF09E22187DAB00859946 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC2FF09F22187DAB00859946 /* Build configuration list for PBXNativeTarget "Blending macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC2FF0A022187DAB00859946 /* Debug */,
+				EC2FF0A122187DAB00859946 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC2FF06922187DAA00859946 /* Project object */;
+}
