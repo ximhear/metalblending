@@ -212,27 +212,39 @@ class Renderer: NSObject, MTKViewDelegate {
                 renderEncoder.setFragmentBuffer(dynamicUniformBuffer, offset:uniformBufferOffset, index: BufferIndex.uniforms.rawValue)
                 
                 let vertices: [Float] = [
+                    -2, 0.75, 2,          1, 1, 0, 0.5,
+                    -2, -0.75, 2,         1, 1, 0, 0.5,
+                    2, -0.75, 2,          1, 1, 0, 0.5,
+                    2, 0.75, 2,           1, 1, 0, 0.5,
+
+                    -0.5, 0.5, 0.5,       0, 1, 0, 0.5,
+                    -0.5, -1, 0.5,        0, 1, 0, 0.5,
+                    1, -1, 0.5,           0, 1, 0, 0.5,
+                    1, 0.5, 0.5,          0, 1, 0, 0.5,
+                    
                     -1, 1, 0,           1, 0, 0, 0.5,
                     -1, -0.5, 0,        1, 0, 0, 0.5,
                     0.5, -0.5, 0,       1, 0, 0, 0.5,
                     0.5, 1, 0,          1, 0, 0, 0.5,
                     
-                    -0.5, 0.5, 0.5,       0, 1, 0, 0.5,
-                    -0.5, -1, 0.5,        0, 1, 0, 0.5,
-                    1, -1, 0.5,           0, 1, 0, 0.5,
-                    1, 0.5, 0.5,          0, 1, 0, 0.5
+                    -1, 1, -1,          0, 0, 1, 0.5,
+                    -1, -1, -1,         0, 0, 1, 0.5,
+                    1, -1, 1,           0, 0, 1, 0.5,
+                    1, 1, 1,            0, 0, 1, 0.5,
                 ]
                 
                 let indices: [UInt16] = [
                     0, 1, 2, 0, 2, 3,
-                    4, 5, 6, 4, 6, 7
+                    4, 5, 6, 4, 6, 7,
+                    8, 9, 10, 8, 10, 11,
+                    12, 13, 14, 12, 14, 15,
                 ]
                 
-                let indexBuffer = device.makeBuffer(bytes: indices, length: MemoryLayout<UInt16>.stride * 12, options: .storageModeShared)
+                let indexBuffer = device.makeBuffer(bytes: indices, length: MemoryLayout<UInt16>.stride * 24, options: .storageModeShared)
                 
-                renderEncoder.setVertexBytes(vertices, length: MemoryLayout<Float>.stride * 7 * 8, index: 0)
+                renderEncoder.setVertexBytes(vertices, length: MemoryLayout<Float>.stride * 7 * 4 * 4, index: 0)
                 renderEncoder.drawIndexedPrimitives(type: .triangle,
-                                                    indexCount: 12,
+                                                    indexCount: 24,
                                                     indexType: .uint16,
                                                     indexBuffer: indexBuffer!,
                                                     indexBufferOffset: 0)
@@ -291,11 +303,11 @@ func matrix_perspective_right_hand(fovyRadians fovy: Float, aspectRatio: Float, 
 func matrix_perspective_left_hand(fovyRadians fovy: Float, aspectRatio: Float, nearZ: Float, farZ: Float) -> matrix_float4x4 {
     let ys = 1 / tanf(fovy * 0.5)
     let xs = ys / aspectRatio
-    let zs = farZ / -(nearZ - farZ)
+    let zs = farZ / (farZ - nearZ)
     return matrix_float4x4.init(columns:(vector_float4(xs,  0, 0,   0),
                                          vector_float4( 0, ys, 0,   0),
                                          vector_float4( 0,  0, zs, 1),
-                                         vector_float4( 0,  0, -zs * nearZ, 0)))
+                                         vector_float4( 0,  0, zs * -nearZ, 0)))
 }
 
 func radians_from_degrees(_ degrees: Float) -> Float {
